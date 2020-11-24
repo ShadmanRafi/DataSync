@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/list_element_bg"
+    app:cardCornerRadius="8dp"
+    android:layout_marginLeft="12dp"
+    android:layout_marginRight="12dp"
+    android:layout_marginBottom="8dp"
+    android:layout_gravity="top|center"
+    android:backgroundTint="@color/page_bg">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/card_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginTop="13dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:text="@string/sample_title">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/card_data"
+            android:layout_below="@+id/card_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:layout_marginBottom="12dp"
+            android:maxLength="350"
+            android:textSize="14sp"
+            android:text="@string/sample_title">
+
+        </TextView>
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

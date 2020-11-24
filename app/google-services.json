@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "16470658324",
+    "firebase_url": "https://syncdata-966c0.firebaseio.com",
+    "project_id": "syncdata-966c0",
+    "storage_bucket": "syncdata-966c0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:16470658324:android:4cb4885061a5ac7b418601",
+        "android_client_info": {
+          "package_name": "com.sr.datasync"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "16470658324-knsk7c9d4v0uuu6cbbtqma5ifbuuqd1t.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBSgZvV3AJNr1Znm9YmdnN8xPIChrB62vE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "16470658324-knsk7c9d4v0uuu6cbbtqma5ifbuuqd1t.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

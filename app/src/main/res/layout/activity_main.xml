@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_login"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/AppName"
+        android:layout_marginTop="120dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/app_name"
+        android:textColor="@color/funky_font"
+        android:textSize="45sp"
+        android:textStyle="bold"
+        android:textAlignment="center"/>
+
+    <RadioGroup
+        android:layout_marginTop="50dp"
+        android:id="@+id/rg"
+        android:layout_below="@+id/AppName"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/radio_group_bg">
+        <androidx.appcompat.widget.AppCompatRadioButton
+            android:id="@+id/lgRB"
+            android:checked="true"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:textColor="@color/funky_font"
+            android:text="LOG IN"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:button="@android:color/transparent"
+            android:background="@drawable/radio_btn_selector"
+            android:layout_weight="1"
+            />
+        <androidx.appcompat.widget.AppCompatRadioButton
+            android:id="@+id/suRB"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:textColor="@color/funky_font"
+            android:text="SIGN UP"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:button="@android:color/transparent"
+            android:background="@drawable/radio_btn_selector"
+            android:layout_weight="1"
+            />
+    </RadioGroup>
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/vp"
+        android:layout_below="@+id/rg"
+        android:layout_centerHorizontal="true"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"/>
+
+</RelativeLayout>

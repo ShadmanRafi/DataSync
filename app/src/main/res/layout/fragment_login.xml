@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".LoginFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_marginTop="30dp"
+        android:id="@+id/li_tl_uid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        app:helperTextTextColor="@color/funky_font"
+        app:counterOverflowTextColor="@color/funky_font"
+        android:textColorHint="@color/funky_font"
+        app:boxStrokeColor="@color/funky_font"
+        app:boxStrokeWidth="2dp"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:hint="Email">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/li_tf_uid"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:textColor="@color/funky_font"
+            >
+
+        </com.google.android.material.textfield.TextInputEditText>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/li_tl_pass"
+        android:layout_below="@+id/li_tl_uid"
+        android:layout_marginTop="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        app:helperTextTextColor="@color/funky_font"
+        app:counterOverflowTextColor="@color/funky_font"
+        android:textColorHint="@color/funky_font"
+        app:boxStrokeColor="@color/funky_font"
+        app:boxStrokeWidth="2dp"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:hint="Password">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/li_tf_pass"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:textColor="@color/funky_font"
+            >
+
+        </com.google.android.material.textfield.TextInputEditText>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/li_err"
+        android:layout_below="@+id/li_tl_pass"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="13sp"/>
+
+    <Button
+        android:id="@+id/li_btn"
+        android:layout_below="@+id/li_err"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:layout_centerInParent="true"
+        android:backgroundTint="@color/funky_font"
+        android:textColor="@color/black"
+        android:text="LOG IN"
+        />
+    <ProgressBar
+        android:id="@+id/li_loadingBar"
+        android:visibility="invisible"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_width="250dp"
+        android:layout_height="250dp">
+    </ProgressBar>
+
+</RelativeLayout>
